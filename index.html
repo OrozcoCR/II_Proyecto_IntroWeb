@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tu Tienda en Línea</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="Agregar.js"></script>
     <script>
         var productos;
         function cargarProductos() {
+            //localStorage.clear()
+            const carrito = obtenerCarrito();
 
             // Crear una instancia de XMLHttpRequest
             var xhr = new XMLHttpRequest();

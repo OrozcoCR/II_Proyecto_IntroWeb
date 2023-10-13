@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Detalles del Producto</title>
     <link rel="stylesheet" href="vistaProducto.css">
+    <script src="Agregar.js"></script>
     <script>
         var product;
+        
+       
 
         function displayProducto() {
+            
             // Get the product data from the URL parameter (assuming it's passed as a JSON string)
             const urlParams = new URLSearchParams(window.location.search);
             const productDataJSON = urlParams.get('id');
@@ -49,6 +53,9 @@
                 const addToCart = document.createElement('button');
                 addToCart.className = 'add-to-cart-button';
                 addToCart.innerHTML = "Agregar al carrito";
+                addToCart.onclick = function() {
+                    agregarAlCarrito(); // Llama a la función que maneja la acción de agregar al carrito
+                    };
 
                 const productImage = document.createElement('img');
                 productImage.className = 'product-image';
