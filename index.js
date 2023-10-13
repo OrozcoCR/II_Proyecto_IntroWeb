@@ -1,6 +1,8 @@
 var productos;
+
 function cargarProductos() {
   //localStorage.clear()
+  console.log("limpiar");
   const carrito = obtenerCarrito();
   console.log(carrito);
 

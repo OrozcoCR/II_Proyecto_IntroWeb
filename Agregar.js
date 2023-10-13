@@ -50,14 +50,14 @@ function displayProducto() {
 
 function agregarAlCarrito() {
     if (product) {
-        const productoExistente = carrito.find(item => item.product.id === product.id);
+        const productoExistente = carrito.find(item => item.id === product.id);
 
         if (productoExistente) {
             // Si el producto ya está en el carrito, aumenta la cantidad
-            productoExistente.product.cantidad += 1;
+            productoExistente.cantidad += 1;
         } else {
             // Si no existe, agrega el producto al carrito con cantidad 1
-            carrito.push({ product, cantidad: 1 });
+            carrito.push( product );
         }
 
         // Actualiza el carrito en Local Storage
