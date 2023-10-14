@@ -7,16 +7,34 @@
     <link rel="stylesheet" href="styles.css">
     <script src="Agregar.js"></script>
     <script src="index.js"></script>
+    <script src="slider.js"></script>
+    
 </head>
 <body onload="cargarProductos()">
     <div class="navbar">
         <img src="imgs/logo.png" alt="Logo de la Tienda" class="logo">
         <h1>Tu Restaurante en Linea</h1>
+        <img src="imgs/carrito.png" alt="Logo de la Tienda" class="logo" >
         <div class="search-bar">
             <input type="text" placeholder="Ingresa un producto" id="search" name="search">
             <button type="submit" onclick="buscarProductos()">Buscar</button>
         </div>
+        
+    </div>
+    <div class="slider-container">
+        <div class="slider">
+            <img class="active" src="./imgs/portada2.jpg" alt="Imagen 1">
+            <img src="./imgs/portada3.jpg" alt="Imagen 2">
+            <img src="./imgs/portada4.jpg" alt="Imagen 3">
+        </div>
+        
+        <div>
+            <button onclick="cambiarSlide(1)">1</button>
+            <button onclick="cambiarSlide(2)"> 2</button>
+            <button onclick="cambiarSlide(3)">3</button>
+        </div>
     </div>
     <div id="card-container" class="container"></div>
+   
 </body>
 </html>
