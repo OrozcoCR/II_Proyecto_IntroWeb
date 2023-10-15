@@ -4,6 +4,7 @@ function cargarProductos() {
   //localStorage.clear()
   console.log("limpiar");
   const carrito = obtenerCarrito();
+  counterCarrito();
   console.log(carrito);
 
   // Crear una instancia de XMLHttpRequest
@@ -116,4 +117,22 @@ function buscarProductos() {
   };
   // Enviar la solicitud AJAX
   xhr.send();
+}
+
+function counterCarrito() {
+  // Retrieve cart data from localStorage
+  const cartData = localStorage.getItem("carrito");
+
+  // Parse the cart data (assuming it's in JSON format)
+  const cart = JSON.parse(cartData);
+
+  if (cart != null) {
+    // Calculate the total number of items in the cart
+    const totalItems = cart.reduce((total, item) => total + item.cantidad, 0);
+
+    // Update the cart count display on the navbar
+    let cartCount = document.getElementById("cart-count");
+    cartCount.textContent = totalItems;
+    console.log( cartCount.textContent = totalItems);
+  }
 }

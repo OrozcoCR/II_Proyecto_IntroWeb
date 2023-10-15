@@ -8,13 +8,17 @@
     <script src="Agregar.js"></script>
     <script src="index.js"></script>
     <script src="slider.js"></script>
+    <script src="formularioPago.js"></script>
     
 </head>
-<body onload="cargarProductos()">
+<body onload="cargarProductos()" onfocus="counterCarrito()">
     <div class="navbar">
         <img src="imgs/logo.png" alt="Logo de la Tienda" class="logo">
         <h1>Tu Restaurante en Linea</h1>
-        <img src="imgs/carrito.png" alt="Logo de la Tienda" class="logo" >
+        <div class="cart-container">
+            <img id="cart-icon" src="imgs/carrito.png" alt="Logo de la Tienda" class="logo" onclick="pagar()">
+            <div class="notification-circle" id="cart-count">0</div>
+        </div>
         <div class="search-bar">
             <input type="text" placeholder="Ingresa un producto" id="search" name="search">
             <button type="submit" onclick="buscarProductos()">Buscar</button>

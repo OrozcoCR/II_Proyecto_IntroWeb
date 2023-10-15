@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  margin: 0; /* Elimina el margen predeterminado del body */
+  padding: 0; /* Elimina el relleno predeterminado del body */
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  color: #fff;
+  display: inline-flexbox;
+  align-items: center; /* Centra verticalmente los elementos */
+  padding: 10px 20px;
+  z-index: 1;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  float: left; /* Alinea el logo a la izquierda */
+}
+.title {
+  font-size: 24px;
+}
+.success-message {
+  margin: 170px auto;
+  padding: 20px;
+  color: black;
+  max-width: 40%;
+}
+
+h1 {
+  font-size: 24px;
+}
+p {
+  font-size: 18px;
+}

@@ -139,6 +139,41 @@ img {
     display: block;
 }
 
+.cart-container {
+    position: relative;
+    display: inline-block; /* Ensures the container only takes as much space as needed */
+}
 
+.notification-circle {
+    position: absolute;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
 
+    align-items: center;
+    margin-top: 10px;
+    top: -5px; /* Adjust the top position to overlap with the cart image */
+    right: 5px; /* Adjust the right position to overlap with the cart image */
+}
+
+#cart-icon {
+    opacity: 0.8; /* Reduce opacity when not hovered */
+    transition: box-shadow 0.3s, opacity 0.3s;
+    cursor: pointer;
+}
+
+#cart-icon:hover {
+    opacity: 1; /* Restore opacity on hover */
+    box-shadow: 0 0 10px rgba(230, 83, 83, 0.3); /* Add a shadow on hover */
+}
+  
+  
+  
+  
+  
+  
 
