@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "name": "Sopa Azteca",
+    "description": "Deliciosa sopa azteca con una mezcla de sabores y especias.",
+    "price": 50.00,
+    "thumbnail": "imgs/aztecca.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 2,
+    "name": "Camarones Empanizados",
+    "description": "Camarones empanizados crujientes servidos con una salsa picante.",
+    "price": 65.00,
+    "thumbnail": "imgs/camarones-emp.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 3,
+    "name": "Chifrijo",
+    "description": "Plato tradicional costarricense con arroz, frijoles, cerdo y aguacate.",
+    "price": 65.00,
+    "thumbnail": "imgs/chifrijo.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 4,
+    "name": "Churrasco",
+    "description": "Filete a la parrilla servido con salsa chimichurri y verduras asadas.",
+    "price": 65.00,
+    "thumbnail": "imgs/Churrasco.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 5,
+    "name": "Costilla Francesa",
+    "description": "Costillas al estilo francés con una salsa rica y sabrosa.",
+    "price": 65.00,
+    "thumbnail": "imgs/Costilla_Francesa.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 6,
+    "name": "Costilla BBQ",
+    "description": "Costillas a la barbacoa con una salsa ahumada y picante.",
+    "price": 65.00,
+    "thumbnail": "imgs/Costilla.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 7,
+    "name": "Fajitas de Pollo Empanizadas",
+    "description": "Fajitas de pollo empanizadas servidas con salsa y tortillas.",
+    "price": 65.00,
+    "thumbnail": "imgs/fajitas.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 8,
+    "name": "Granizado",
+    "description": "Bebida refrescante congelada con varios sabores frutales.",
+    "price": 65.00,
+    "thumbnail": "imgs/granizado.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 9,
+    "name": "Papas Granjeras",
+    "description": "Papas estilo campestre condimentadas con una capa crujiente.",
+    "price": 65.00,
+    "thumbnail": "imgs/granjeras.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 10,
+    "name": "Hamburguesa La Cabaña",
+    "description": "Hamburguesa exclusiva de La Cabaña con todos los ingredientes.",
+    "price": 65.00,
+    "thumbnail": "imgs/hamburguesa.jpg",
+    "cantidad": 1
+  },
+  { 
+    "id": 11,
+    "name": "Lomito en Salsa Strogonoff",
+    "description": "Lomito de ternera tierno en salsa Stroganoff cremosa.",
+    "price": 65.00,
+    "thumbnail": "imgs/LomitoSalsa.png",
+    "cantidad": 1
+  },
+  {
+    "id": 12,
+    "name": "Papanachos",
+    "description": "Deliciosos bocadillos rellenos de papa con una variedad de ingredientes.",
+    "price": 65.00,
+    "thumbnail": "imgs/papanachos.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 13,
+    "name": "Pollo a la Parrilla",
+    "description": "Pollo a la parrilla con un equilibrio perfecto de especias y ternura.",
+    "price": 65.00,
+    "thumbnail": "imgs/Parrilla.png",
+    "cantidad": 1
+  },
+  {
+    "id": 14,
+    "name": "Pizzapap",
+    "description": "Fusión única de pizza y papas gajo con deliciosos ingredientes.",
+    "price": 65.00,
+    "thumbnail": "imgs/pizzapap.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 15,
+    "name": "Salchipapas",
+    "description": "Plato clásico de comida callejera con salchichas y papas fritas.",
+    "price": 65.00,
+    "thumbnail": "imgs/Salchipapas.png",
+    "cantidad": 1
+  },
+  {
+    "id": 16,
+    "name": "Fajitas Supreme",
+    "description": "Fajitas de pollo Supreme con una mezcla de sabores y toppings.",
+    "price": 65.00,
+    "thumbnail": "imgs/supreme.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 17,
+    "name": "Surtida",
+    "description": "Plato surtido con una variedad de delicias saladas para complacer su paladar.",
+    "price": 65.00,
+    "thumbnail": "imgs/surtida.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 18,
+    "name": "Tilapia",
+    "description": "Filete de tilapia ligeramente sazonado y a la parrilla servido con acompañamientos.",
+    "price": 65.00,
+    "thumbnail": "imgs/tilapia.jpg",
+    "cantidad": 1
+  }
+]

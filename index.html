@@ -5,147 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tu Tienda en Línea</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="Agregar.js"></script>
+    <script src="index.js"></script>
+    <script src="slider.js"></script>
+    <script src="formularioPago.js"></script>
+    
 </head>
-<body>
+<body onload="cargarProductos()" onfocus="counterCarrito()">
     <div class="navbar">
         <img src="imgs/logo.png" alt="Logo de la Tienda" class="logo">
         <h1>Tu Restaurante en Linea</h1>
-        <input type="text" placeholder="Buscar" class="input">
+        <div class="cart-container">
+            <img id="cart-icon" src="imgs/carrito.png" alt="Logo de la Tienda" class="logo" onclick="pagar()">
+            <div class="notification-circle" id="cart-count">0</div>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Ingresa un producto" id="search" name="search">
+            <button type="submit" onclick="buscarProductos()">Buscar</button>
+        </div>
+        
     </div>
-    <div class="container">
-        <!-- Card 1 -->
-        <div class="card">
-            <img src="imgs/aztecca.jpg" alt="Producto 1" class="product-image">
-            <h2>Sopa Azteca</h2>
-            <p>Precio: $50.00</p>
-            <button>Agregar al carrito</button>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="card">
-            <img src="imgs/camarones-emp.jpg" alt="Producto 2" class="product-image">
-            <h2>Camarones Empanizados</h2>
-            <p>Precio: $65.00</p>
-            <button>Agregar al carrito</button>
+    <div class="slider-container">
+        <div class="slider">
+            <img class="active" src="./imgs/portada2.jpg" alt="Imagen 1">
+            <img src="./imgs/portada3.jpg" alt="Imagen 2">
+            <img src="./imgs/portada4.jpg" alt="Imagen 3">
         </div>
         
-        <!-- Card 4 -->
-        <div class="card">
-            <img src="imgs/chifrijo.jpg" alt="Producto 2" class="product-image">
-            <h2>Chifrijo</h2>
-            <p>Precio: $65.00</p>
-            <button>Agregar al carrito</button>
+        <div>
+            <button onclick="cambiarSlide(1)">1</button>
+            <button onclick="cambiarSlide(2)"> 2</button>
+            <button onclick="cambiarSlide(3)">3</button>
         </div>
-        <!-- Card 5 -->
-        <div class="card">
-            <img src="imgs/Churrasco.jpg" alt="Producto 2" class="product-image">
-            <h2>Churrasco</h2>
-            <p>Precio: $65.00</p>
-            <button>Agregar al carrito</button>
-        </div>
-        <!-- Card 6 -->
-        <div class="card">
-            <img src="imgs/Costilla_Francesa.jpg" alt="Producto 2" class="product-image">
-            <h2>Costilla Francesa</h2>
-            <p>Precio: $65.00</p>
-            <button>Agregar al carrito</button>
-        </div>
-        <!-- Card 7 -->
-        <div class="card">
-            <img src="imgs/Costilla.jpg" alt="Producto 2" class="product-image">
-            <h2>Costilla BBQ</h2>
-            <p>Precio: $65.00</p>
-            <button>Agregar al carrito</button>
-        </div>
-        <!-- Card 8 -->
-        <div class="card">
-            <img src="imgs/fajitas.jpg" alt="Producto 2" class="product-image">
-            <h2>Fajitas de Pollo Empanizadas</h2>
-            <p>Precio: $65.00</p>
-            <button>Agregar al carrito</button>
-        </div>
-        <!-- Card 9 -->
-        <div class="card">
-            <img src="imgs/granizado.jpg" alt="Producto 2" class="product-image">
-            <h2>Granizado</h2>
-            <p>Precio: $65.00</p>
-            <button>Agregar al carrito</button>
-        </div>
-        <!-- Card 10 -->
-        <div class="card">
-            <img src="imgs/granjeras.jpg" alt="Producto 2" class="product-image">
-            <h2>Papas Granjeras</h2>
-            <p>Precio: $65.00</p>
-            <button>Agregar al carrito</button>
-        </div>
-        <!-- Card 11-->
-        <div class="card">
-            <img src="imgs/hamburguesa.jpg" alt="Producto 2" class="product-image">
-            <h2>Hamburguesa La Cabaña</h2>
-            <p>Precio: $65.00</p>
-            <button>Agregar al carrito</button>
-        </div>
-
-        <!-- Card 12-->
-        <div class="card">
-            <img src="imgs/LomitoSalsa.png" alt="Producto 2" class="product-image">
-            <h2>Lomito en Salsa Strogonoff</h2>
-            <p>Precio: $65.00</p>
-            <button>Agregar al carrito</button>
-        </div>
-        <!-- Card 13 -->
-        <div class="card">
-            <img src="imgs/papanachos.jpg" alt="Producto 2" class="product-image">
-            <h2>Papanachos</h2>
-            <p>Precio: $65.00</p>
-            <button>Agregar al carrito</button>
-        </div>
-        <!-- Card 14-->
-        <div class="card">
-            <img src="imgs/Parrilla.png" alt="Producto 2" class="product-image">
-            <h2>Pollo a la Parrilla</h2>
-            <p>Precio: $65.00</p>
-            <button>Agregar al carrito</button>
-        </div>
-        <!-- Card 15 -->
-        <div class="card">
-            <img src="imgs/pizzapap.jpg" alt="Producto 2" class="product-image">
-            <h2>Pizzapap</h2>
-            <p>Precio: $65.00</p>
-            <button>Agregar al carrito</button>
-        </div>
-        <!-- Card 16 -->
-        <div class="card">
-            <img src="imgs/Salchipapas.png" alt="Producto 2" class="product-image">
-            <h2>Salchipapas</h2>
-            <p>Precio: $65.00</p>
-            <button>Agregar al carrito</button>
-        </div>
-        <!-- Card 17 -->
-        <div class="card">
-            <img src="imgs/supreme.jpg" alt="Producto 2" class="product-image">
-            <h2>Fajitas Supreme</h2>
-            <p>Precio: $65.00</p>
-            <button>Agregar al carrito</button>
-        </div>
-        <!-- Card 18 -->
-        <div class="card">
-            <img src="imgs/surtida.jpg" alt="Producto 2" class="product-image">
-            <h2>Surtida</h2>
-            <p>Precio: $65.00</p>
-            <button>Agregar al carrito</button>
-        </div>
-        <!-- Card 19 -->
-        <div class="card">
-            <img src="imgs/tilapia.jpg" alt="Producto 2" class="product-image">
-            <h2>Tilapia</h2>
-            <p>Precio: $65.00</p>
-            <button>Agregar al carrito</button>
-        </div>
-        
-        
-
-        <!-- Agrega más "cards" aquí según sea necesario -->
     </div>
+    <div id="card-container" class="container"></div>
+   
 </body>
 </html>
