@@ -159,3 +159,38 @@ img {
     opacity: 1; 
     box-shadow: 0 0 10px rgba(230, 83, 83, 0.3); 
 }
+@media  (max-width: 991px) {
+    .navbar {
+        padding: 10px; /* Reduzca el relleno en pantallas pequeñas */
+        justify-content: space-between; /* Centra los elementos horizontalmente */
+    }
+
+    .logo {
+        float: none; /* Elimina la alineación flotante */
+        margin-left: 0; /* Elimina el margen izquierdo */
+        width: 60px; /* Reduzca el ancho del logo */
+        height: 60px; /* Reduzca la altura del logo */
+    }
+
+    .carrito {
+        margin-left: 10px; /* Reduzca el margen izquierdo para el carrito */
+        width: 60px; /* Reduzca el ancho del carrito */
+        height: 60px; /* Reduzca la altura del carrito */
+    }
+
+    .navbar h1 {
+        margin-left: 0; /* Elimina el margen izquierdo del título */
+    }
+
+   
+    .slider{
+        width: 100%;
+    }
+    .slider img{ 
+        width: 100%;
+    }
+    .slider button {
+        margin: 00px 0px; /* Reduzca el espacio entre los botones */
+    }
+    
+}
