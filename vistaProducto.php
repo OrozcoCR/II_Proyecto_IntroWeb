@@ -1,4 +1,6 @@
 <?php
+// Endpoint que obtiene la información de un producto en especifico
+
 $archivo = 'menu.json'; // Nombre del archivo JSON
 
 // Abre el archivo en modo lectura ('r')
@@ -32,10 +34,7 @@ if ($manejador)
         }
         $cont++;
     }
-    
-
 } else {
     echo 'Error al abrir el archivo JSON.';
 }
-
 ?>

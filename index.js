@@ -1,8 +1,9 @@
 var productos;
 
+/* Función que obtiene la información de los productos desde el backend,
+   genera y muestra las cards dinamicamente */
 function cargarProductos() {
-  //localStorage.clear()
-  console.log("limpiar");
+  // Se actualiza la información del carrito al cargar la página
   const carrito = obtenerCarrito();
   counterCarrito();
   console.log(carrito);
@@ -45,6 +46,7 @@ function cargarProductos() {
         card.appendChild(productPrice);
 
         card.onclick = () => {
+          // Se añade la función que maneja el click a cada card
           console.log(producto);
           const productDataJSON = JSON.stringify(producto.id);
           window.location.href = `vistaProducto.html?id=${encodeURIComponent(
@@ -61,6 +63,8 @@ function cargarProductos() {
   xhr.send();
 }
 
+/* Función que maneja la búqueda de productos, genera y muestra las cards 
+   dinamicamente */
 function buscarProductos() {
   const searchItem = document.getElementById("search").value;
 
@@ -120,19 +124,16 @@ function buscarProductos() {
 }
 
 function counterCarrito() {
-  // Retrieve cart data from localStorage
+  // Obtener el carrito desde localStorage
   const cartData = localStorage.getItem("carrito");
-
-  // Parse the cart data (assuming it's in JSON format)
+  // Parsear a formato JSON
   const cart = JSON.parse(cartData);
-
+  
   if (cart != null) {
-    // Calculate the total number of items in the cart
+    // Calcular la cantidad total de productos en el carrito
     const totalItems = cart.reduce((total, item) => total + item.cantidad, 0);
-
-    // Update the cart count display on the navbar
+    // Actualizar el contador en el icono del carrito
     let cartCount = document.getElementById("cart-count");
     cartCount.textContent = totalItems;
-    console.log( cartCount.textContent = totalItems);
   }
 }

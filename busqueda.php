@@ -1,4 +1,5 @@
 <?php
+//Endpoint que maneja la búsqueda de productos, obteniendolos del archivo JSON
 
 $archivo = 'menu.json'; // Nombre del archivo JSON
 
@@ -40,6 +41,3 @@ if ($manejador)
 }
 
 ?>
-
-
-

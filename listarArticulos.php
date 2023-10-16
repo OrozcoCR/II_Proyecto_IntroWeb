@@ -1,4 +1,6 @@
 <?php
+// Endpoint que obtiene los productos desde el archivo JSON
+
 $archivo = 'menu.json'; // Nombre del archivo JSON
 
 // Abre el archivo en modo lectura ('r')
