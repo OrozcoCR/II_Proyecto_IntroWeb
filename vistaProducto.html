@@ -8,15 +8,23 @@
     <link rel="stylesheet" href="vistaProducto.css">
     <script src="Agregar.js"></script>
     <script src="VistaProducto.js"></script>
+    <script src="formularioPago.js"></script>
 
 </head>
 <body onload="displayProducto()">
-    <div class="navbar">
+    <header class="navbar">
         <img src="imgs/logo.png" alt="Logo de la Tienda" class="logo">
         <h1>Tu Restaurante en Linea</h1>
-    </div>
-    <div id="product-detail-container">
+        <div class="cart-container">
+            <img id="cart-icon" src="imgs/carrito.png" alt="Logo de la Tienda" class="logo" onclick="pagar()">
+            <div class="notification-circle" id="cart-countv">0</div>
+        </div>
+    </header>
+    <main>
+      <div id="product-detail-container">
        
-    </div>
+    </div>  
+    </main>
+    
 </body>
 </html>

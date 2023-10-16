@@ -1,6 +1,7 @@
 var product;
 
 function displayProducto() {
+  counterCarritoV();
   // Obtener el id del producto del parametro la url
   const urlParams = new URLSearchParams(window.location.search);
   const productDataJSON = urlParams.get("id");
@@ -45,6 +46,7 @@ function displayProducto() {
       addToCart.innerHTML = "Agregar al carrito";
       addToCart.onclick = function () {
         agregarAlCarrito(); // Llama a la función que maneja la acción de agregar al carrito
+        counterCarritoV();
       };
 
       const productImage = document.createElement("img");
@@ -64,4 +66,19 @@ function displayProducto() {
   };
   // Enviar la solicitud AJAX
   xhr.send();
+}
+
+function counterCarritoV() {
+  // Obtener el carrito desde localStorage
+  const cartData = localStorage.getItem("carrito");
+  // Parsear a formato JSON
+  const cart = JSON.parse(cartData);
+  
+  if (cart != null) {
+    // Calcular la cantidad total de productos en el carrito
+    const totalItems = cart.reduce((total, item) => total + item.cantidad, 0);
+    // Actualizar el contador en el icono del carrito
+    let cartCount = document.getElementById("cart-countv");
+    cartCount.textContent = totalItems;
+  }
 }

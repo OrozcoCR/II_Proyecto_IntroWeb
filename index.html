@@ -12,19 +12,18 @@
     
 </head>
 <body onload="cargarProductos()" onfocus="counterCarrito()">
-    <div class="navbar">
+    <header class="navbar">
         <img src="imgs/logo.png" alt="Logo de la Tienda" class="logo">
         <h1>Tu Restaurante en Linea</h1>
-        <div class="cart-container">
-            <img id="cart-icon" src="imgs/carrito.png" alt="Logo de la Tienda" class="logo" onclick="pagar()">
-            <div class="notification-circle" id="cart-count">0</div>
-        </div>
         <div class="search-bar">
             <input type="text" placeholder="Ingresa un producto" id="search" name="search">
             <button type="submit" onclick="buscarProductos()">Buscar</button>
         </div>
-        
-    </div>
+        <div class="cart-container">
+            <img id="cart-icon" src="imgs/carrito.png" alt="Logo de la Tienda" class="logo" onclick="pagar()">
+            <div class="notification-circle" id="cart-count">0</div>
+        </div>  
+    </header>
     <div class="slider-container">
         <div class="slider">
             <img class="active" src="./imgs/portada2.jpg" alt="Imagen 1">
@@ -33,11 +32,12 @@
         </div>
         
         <div>
-            <button onclick="cambiarSlide(1)">1</button>
-            <button onclick="cambiarSlide(2)"> 2</button>
-            <button onclick="cambiarSlide(3)">3</button>
+            <button class="slider-btn" onclick="cambiarSlide(1)">1</button>
+            <button class="slider-btn" onclick="cambiarSlide(2)"> 2</button>
+            <button class="slider-btn" onclick="cambiarSlide(3)">3</button>
         </div>
     </div>
+    <h1>Nuestro Menu</h1>
     <div id="card-container" class="container"></div>
    
 </body>

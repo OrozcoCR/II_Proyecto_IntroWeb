@@ -3,6 +3,11 @@ body {
     background-image: url(imgs/fondo.jpg);
 }
 
+body h1 {
+    color: #fff;
+    text-align: center;
+}
+
 /* Estilos para la barra de navegación fija en la parte superior */
 .navbar {
     position: fixed;
@@ -56,7 +61,7 @@ body {
 
 /* Estilos para el contenedor principal de los productos */
 .container {
-    margin-top: 150px;
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -100,7 +105,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center; 
-    margin: 200px auto 50px; 
+    margin: 150px auto 50px; 
     text-align: center;
 }
 
@@ -112,9 +117,9 @@ img {
 }
 
 /* Estilos para los botones del slider */
-.slider button {
+.slider-btn {
     margin-top: 10px;
-    margin: 15px; 
+    border-radius: 5px;
 }
 
 .slider img {
@@ -132,6 +137,7 @@ img {
 .cart-container {
     position: relative;
     display: inline-block; 
+    margin-right: 20px;
 }
 
 .notification-circle {
@@ -161,25 +167,25 @@ img {
 }
 @media  (max-width: 991px) {
     .navbar {
-        padding: 10px; /* Reduzca el relleno en pantallas pequeñas */
-        justify-content: space-between; /* Centra los elementos horizontalmente */
+        padding: 10px; 
+        justify-content: space-between; 
     }
 
     .logo {
-        float: none; /* Elimina la alineación flotante */
-        margin-left: 0; /* Elimina el margen izquierdo */
-        width: 60px; /* Reduzca el ancho del logo */
-        height: 60px; /* Reduzca la altura del logo */
+        float: none; 
+        margin-left: 0; 
+        width: 60px; 
+        height: 60px; 
     }
 
     .carrito {
-        margin-left: 10px; /* Reduzca el margen izquierdo para el carrito */
-        width: 60px; /* Reduzca el ancho del carrito */
-        height: 60px; /* Reduzca la altura del carrito */
+        margin-left: 10px; 
+        width: 60px; 
+        height: 60px; 
     }
 
     .navbar h1 {
-        margin-left: 0; /* Elimina el margen izquierdo del título */
+        margin-left: 0;
     }
 
    
@@ -190,7 +196,7 @@ img {
         width: 100%;
     }
     .slider button {
-        margin: 00px 0px; /* Reduzca el espacio entre los botones */
+        margin: 00px 0px; 
     }
     
 }
