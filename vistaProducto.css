@@ -14,51 +14,46 @@ body {
     text-align: center;
 }
 .logo {
-    float: left; /* Alinea la imagen a la izquierda */
-    margin-left: 20px; /* Reduce left margin for the logo */
-    width: 80px; /* Reduce width of the logo */
-    height: 80px; /* Reduce height of the logo */
+    float: left; 
+    margin-left: 20px; 
+    width: 80px;
+    height: 80px; 
 }
 
 .navbar h1,
 .navbar input {
-    margin-right: 20px; /* Reduce right margin for both title and input */
+    margin-right: 20px; 
 }
 
-/* Container for the product details */
 #product-detail-container {
     margin-top: 150px; 
     padding: 10px;
     display: flex; 
 }
 
-/* Product details container (right side) */
 .product-details {
-    flex: 1; /* Expand to fill available space */
+    flex: 1; 
 }
 
 img.product-image {
-    max-width: 50%; /* Adjust the image width as needed */
+    max-width: 50%; 
     height: 40%;
     margin-left: 20px;
-    margin-right: 20px; /* Add space to the right of the image */
+    margin-right: 20px; 
 }
 
-/* Product name */
 h2 {
     font-size: 24px;
     margin-top: 0;
     color: #333;
 }
 
-/* Product description */
 p {
     font-size: 16px;
     line-height: 1.5;
     color: #666;
 }
 
-/* Product price */
 p.price {
     font-size: 18px;
     font-weight: bold;
@@ -66,20 +61,19 @@ p.price {
     margin-top: 10px;
 }
 
-/* CSS para el botón "Agregar al carrito" */
+
 .add-to-cart-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #af1717; /* Color de fondo del botón */
-    color: #fff; /* Color del texto del botón */
+    background-color: #af1717; 
+    color: #fff; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease; /* Efecto de transición al pasar el mouse */
+    transition: background-color 0.3s ease; 
 }
 
 .add-to-cart-button:hover {
-    background-color: #d23f3f; /* Color de fondo al pasar el mouse */
+    background-color: #d23f3f; 
 }
-

@@ -2,8 +2,8 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
   background-color: #f0f0f0;
-  margin: 0; /* Elimina el margen predeterminado del body */
-  padding: 0; /* Elimina el relleno predeterminado del body */
+  margin: 0; 
+  padding: 0; 
 }
 .navbar {
   position: fixed;
@@ -13,7 +13,7 @@ body {
   background-color: black;
   color: #fff;
   display: inline-flexbox;
-  align-items: center; /* Centra verticalmente los elementos */
+  align-items: center; 
   padding: 10px 20px;
   z-index: 1;
 }
@@ -21,7 +21,7 @@ body {
 .logo {
   width: 80px;
   height: 80px;
-  float: left; /* Alinea el logo a la izquierda */
+  float: left; 
 }
 .title {
   font-size: 24px;

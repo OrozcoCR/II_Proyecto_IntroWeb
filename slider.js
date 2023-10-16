@@ -1,5 +1,5 @@
 let currentSlide = 1;
-
+// Función que maneja el slider
 function cambiarSlide(slideIndex) {
   if (slideIndex !== currentSlide) {
     // Oculta la diapositiva actual

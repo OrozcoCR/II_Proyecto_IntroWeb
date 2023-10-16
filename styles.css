@@ -1,6 +1,6 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url(fondo.jpg);
+    background-image: url(imgs/fondo.jpg);
 }
 
 /* Estilos para la barra de navegación fija en la parte superior */
@@ -16,26 +16,24 @@ body {
     text-align: center;
     justify-content: space-between;
     align-items: center;
-    z-index: 1; /* Asegura que la barra de navegación esté por encima de otros elementos */
+    z-index: 1; 
 }
 .logo {
-    float: left; /* Alinea la imagen a la izquierda */
-    margin-left: 20px; /* Reduce left margin for the logo */
-    width: 80px; /* Reduce width of the logo */
-    height: 80px; /* Reduce height of the logo */
+    float: left; 
+    margin-left: 20px; 
+    width: 80px; 
+    height: 80px; 
 }
 .carrito {
-   
-    margin-left: 150px; /* Reduce left margin for the logo */
-    width: 80px; /* Reduce width of the logo */
-    height: 80px; /* Reduce height of the logo */
+    margin-left: 150px; 
+    width: 80px; 
+    height: 80px;
 }
 
 .navbar h1 {
-    margin-left: 350px; /* Reduce right margin for both title and input */
+    margin-left: 350px; 
 }
 
-/* Search bar styles */
 .search-bar {
     margin-right: 20px;
 }
@@ -44,7 +42,7 @@ body {
     padding: 5px;
     border: none;
     border-radius: 5px;
-    margin-right: 10px; /* Add spacing between input and button */
+    margin-right: 10px; 
 }
 
 .search-bar button {
@@ -58,7 +56,7 @@ body {
 
 /* Estilos para el contenedor principal de los productos */
 .container {
-    margin-top: 150px; /* Dejar espacio para la barra de navegación */
+    margin-top: 150px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -79,8 +77,8 @@ body {
 }
 
 .card:hover {
-    transform: translateY(-5px); /* Levanta la card 5px cuando el mouse está sobre ella */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Cambia la sombra */
+    transform: translateY(-5px); 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
 }
 
 /* Estilos para las imágenes de los productos */
@@ -92,24 +90,19 @@ body {
     background-color: lightgrey;
 }
 
-
-
 img {
     width: 100%;
     height: auto;
 }
-/* Estilos para el contenedor del slider */
 
+/* Estilos para el contenedor del slider */
 .slider-container {
     display: flex;
-    flex-direction: column; /* Coloca los elementos uno encima del otro */
-    align-items: center; /* Centra horizontalmente el contenido */
-    margin: 200px auto 50px; /* Mueve el slider hacia abajo y lo centra horizontalmente */
-    text-align: center; /* Centra horizontalmente el contenido dentro del slider */
+    flex-direction: column;
+    align-items: center; 
+    margin: 200px auto 50px; 
+    text-align: center;
 }
-
-
-
 
 .slider {
     width: 1200px; 
@@ -118,14 +111,11 @@ img {
     position: relative;
 }
 
-
 /* Estilos para los botones del slider */
 .slider button {
     margin-top: 10px;
-    margin: 15px; /* Añade espacio entre los botones */
+    margin: 15px; 
 }
-
-
 
 .slider img {
     width: 100%;
@@ -141,7 +131,7 @@ img {
 
 .cart-container {
     position: relative;
-    display: inline-block; /* Ensures the container only takes as much space as needed */
+    display: inline-block; 
 }
 
 .notification-circle {
@@ -153,27 +143,19 @@ img {
     height: 22px;
     line-height: 22px;
     text-align: center;
-
     align-items: center;
     margin-top: 10px;
-    top: -5px; /* Adjust the top position to overlap with the cart image */
-    right: 5px; /* Adjust the right position to overlap with the cart image */
+    top: -5px; 
+    right: 5px; 
 }
 
 #cart-icon {
-    opacity: 0.8; /* Reduce opacity when not hovered */
+    opacity: 0.8;
     transition: box-shadow 0.3s, opacity 0.3s;
     cursor: pointer;
 }
 
 #cart-icon:hover {
-    opacity: 1; /* Restore opacity on hover */
-    box-shadow: 0 0 10px rgba(230, 83, 83, 0.3); /* Add a shadow on hover */
+    opacity: 1; 
+    box-shadow: 0 0 10px rgba(230, 83, 83, 0.3); 
 }
-  
-  
-  
-  
-  
-  
-

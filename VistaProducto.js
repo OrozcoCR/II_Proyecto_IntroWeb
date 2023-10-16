@@ -1,7 +1,7 @@
 var product;
 
 function displayProducto() {
-  // Get the product data from the URL parameter (assuming it's passed as a JSON string)
+  // Obtener el id del producto del parametro la url
   const urlParams = new URLSearchParams(window.location.search);
   const productDataJSON = urlParams.get("id");
 
@@ -22,8 +22,7 @@ function displayProducto() {
     if (xhr.status === 200) {
       // Parsear la respuesta JSON
       product = JSON.parse(xhr.responseText);
-      // Mostrar los artículos en la página
-      // Create product detail elements (e.g., description, image)
+      // Añadir los detalles del producto a la página
       const productDetailContainer = document.getElementById(
         "product-detail-container"
       );
@@ -52,7 +51,7 @@ function displayProducto() {
       productImage.className = "product-image";
       productImage.src = product.thumbnail;
 
-      // Append elements to the container
+      // Agrega los elementos al container
       productDetailContainer.appendChild(productImage);
       detailContainer.appendChild(productName);
       detailContainer.appendChild(productPrice);
